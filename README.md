@@ -17,13 +17,13 @@ This repository contains data about GitHub users in Sydney who have more than 10
 2. repositories.csv: Contains details about the public repositories of users in users.csv, including fields like repository name, creation date, star count, language, and license type.
 
 
-**How Data Was Collected**
+**How Data Was Collected:**
 The GitHub scraping process was handled using the GitHub API, focusing on users in Sydney with a follower count of over 100. Data retrieval involved iterating through users and fetching repository information for each user, subject to API rate limits. Company names were cleaned to remove extra spaces, @ symbols, and were converted to uppercase. The API’s rate limit was handled by automatically pausing when limits were reached.
 
 
 **Users and Repositories CSV Schema**
 
-users.csv Columns
+**users.csv Columns:**
 Each row in users.csv corresponds to a GitHub user and contains the following fields:
 
 login: The GitHub user ID.
@@ -38,7 +38,7 @@ followers: Number of followers the user has.
 following: Number of users the user is following.
 created_at: Date when the user created their GitHub account.
 
-repositories.csv Columns
+**repositories.csv Columns:**
 Each row in repositories.csv represents a public repository associated with a user from users.csv. The fields include:
 
 login: GitHub user ID (login) of the repository owner.
